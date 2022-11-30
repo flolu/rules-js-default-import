@@ -3,7 +3,11 @@
   <p>TypeError: (0 , _sanitizeHtml(...).default) is not a function</p>
 </div>
 
-# Usage
+# Solution
+
+The solution was rather simple. Setting `"noInterop": true` in `.swccrc` caused this error. Hence just omitting it or setting it to `false` fixes the issue. Read more about it here: https://swc.rs/docs/configuration/modules#commonjs
+
+# Reproduction
 
 **Requirements**
 
